@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Icon } from 'antd';
-import style from '../styles/home-layout.less';
+import style from './index.less';
 
 const SubMenu = Menu.SubMenu;
 const MenuItem = Menu.Item; 

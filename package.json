@@ -16,7 +16,8 @@
   },
   "scripts": {
     "server": "node server/index.js",
-    "dev": "roadhog server"
+    "dev": "roadhog server",
+    "new": "node scripts/newm.js"
   },
   "author": "cxyr",
   "license": "ISC"

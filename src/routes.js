@@ -1,22 +1,22 @@
 import HomePage from './routes/home';
 
-import UserListPage from './functions/UserList';
-import UserAddPage from './functions/UserAdd';
-import UserEditPage from './functions/UserEdit';
+import UserListPage from './functions/user-list';
+import UserAddPage from './functions/user-add';
+import UserEditPage from './functions/user-edit';
 
-import BookListPage from './functions/BookList';
-import BookAddPage from './functions/BookAdd';
-import BookEditPage from './functions/BookEdit';
+import BookListPage from './functions/book-list';
+import BookAddPage from './functions/book-add';
+import BookEditPage from './functions/book-edit';
 
 
 
 const routes = [
-	{
+	/*{
 		title: 'Welcome',
 		path: '/',
 		exact: true,
 		component: HomePage
-	},{
+	},*/{
 		title: '用户列表',
 		path: '/user/list',
 		exact: false,
