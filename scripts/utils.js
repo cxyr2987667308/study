@@ -14,19 +14,26 @@ const generateTemplate = (modules) => {
 	let exportRoutes = '';
 	modules.forEach(module => {
 		indexFileStr += `
-		const ${convert(module)} = Loadable({loader: () => import('./${module}/index.module.js'),loading: Spin});
+		const ${convert(module)} = Loadable({
+			loader: () => import('./${module}/index.module.js'),
+			loading: Spin
+		});
+
 		const ${convert(module)}Routes = require('./${module}/config').routes;`;
 		exportModules += `'${module}': ${convert(module)},`;
 		exportRoutes += `${convert(module)}Routes,`;
 	});
-	 return `
+	return `
 	import React from 'react';
 	import Loadable from 'react-loadable';
 	import { Loading } from 'components';
+
 	const Spin = () => <Loading loading />;
 	${indexFileStr}
+	
 	let exportModules = {${exportModules}};
 	let exportRoutes =Object.assign({},${exportRoutes});
+	
 	export {exportModules,exportRoutes};`;
 };
 

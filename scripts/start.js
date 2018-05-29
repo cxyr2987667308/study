@@ -4,7 +4,7 @@ const path = require('path');
 const appDirectory = fs.realpathSync(process.cwd());
 const chalk = require('chalk');
 const inquirer = require('inquirer');
-const { convert } = require('./utils');
+const { generateTemplate } = require('./utils');
 const resolvePath = relativePath => path.resolve(appDirectory, relativePath);
 
 let moduleName;
