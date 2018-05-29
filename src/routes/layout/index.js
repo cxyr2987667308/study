@@ -6,7 +6,7 @@ import style from './index.less';
 const SubMenu = Menu.SubMenu;
 const MenuItem = Menu.Item; 
 
-class HomeLayout extends React.Component{
+class Layout extends React.Component{
 	render(){
 		const { children } = this.props;
 		return(
@@ -47,4 +47,4 @@ class HomeLayout extends React.Component{
 	}
 }
 
-export default HomeLayout;
+export default Layout;

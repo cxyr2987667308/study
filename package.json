@@ -17,7 +17,8 @@
   "scripts": {
     "server": "node server/index.js",
     "dev": "roadhog server",
-    "new": "node scripts/newm.js"
+    "new": "node scripts/newm.js",
+    "start": "node scripts/start.js --max_old_space_size=4096"
   },
   "author": "cxyr",
   "license": "ISC"
